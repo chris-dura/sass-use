@@ -1,0 +1,10 @@
+@use '../library/_config.scss' as config;
+@use '../library/_vars.scss' as vars;
+
+.bar {
+  @if config.$global-make-me-red == true {
+    color: red;
+  } @else {
+    color: vars.$goodbye;
+  }
+}

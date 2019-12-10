@@ -1,0 +1,10 @@
+@import '../library/_config.scss';
+@import '../library/_vars.scss';
+
+.baz {
+  @if $global-make-me-red == true {
+    color: red;
+  } @else {
+    color: $goodbye;
+  }
+}

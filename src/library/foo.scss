@@ -1,0 +1,11 @@
+@use 'config';
+@use 'vars';
+
+.foo {
+  @include vars.lib-mixin();
+  @if config.$global-make-me-red == true {
+    color: red;
+  } @else {
+    color: vars.$goodbye;
+  }
+}
