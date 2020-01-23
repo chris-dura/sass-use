@@ -1,0 +1,11 @@
+@use 'config';
+
+$lib-color: red !default;
+
+@mixin lib-mixin() {
+  @if config.$use-lib-color == true {
+    background: $lib-color;
+  } @else {
+    background: green;
+  }
+}

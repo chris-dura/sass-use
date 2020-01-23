@@ -1,0 +1,11 @@
+@use 'config';
+@use 'vars';
+
+.foo {
+  @include vars.lib-mixin();
+  @if config.$use-lib-color == true {
+    color: vars.$lib-color;
+  } @else {
+    color: green;
+  }
+}

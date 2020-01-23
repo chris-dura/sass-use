@@ -4,10 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npm run library && npm run legacy && npm run consumer",
-    "library": "sass src/library",
-    "legacy": "sass src/legacy",
-    "consumer": "sass src/consumer",
+    "build": "sass src/simple",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
